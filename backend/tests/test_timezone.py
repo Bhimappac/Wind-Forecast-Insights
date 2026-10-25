@@ -1,6 +1,6 @@
 from zoneinfo import ZoneInfo
 
-from backend.app.services.forecast_service import ForecastService
+from app.services.forecast_service import ForecastService
 
 LONDON_TZ = ZoneInfo("Europe/London")
 

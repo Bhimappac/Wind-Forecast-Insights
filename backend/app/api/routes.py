@@ -6,7 +6,7 @@ import pandas as pd
 from fastapi import APIRouter, HTTPException, Query
 from fastapi.responses import Response
 
-from backend.app.models.schemas import (
+from app.models.schemas import (
     AccuracySummaryResponse,
     ActualItem,
     ActualsResponse,
@@ -17,9 +17,9 @@ from backend.app.models.schemas import (
     LatestForecastResponse,
     VintagesResponse,
 )
-from backend.app.services.data_store import data_store
-from backend.app.services.forecast_service import forecast_service
-from backend.app.services.metrics_service import MetricsService
+from app.services.data_store import data_store
+from app.services.forecast_service import forecast_service
+from app.services.metrics_service import MetricsService
 
 router = APIRouter()
 

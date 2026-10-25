@@ -5,8 +5,8 @@ from zoneinfo import ZoneInfo
 import numpy as np
 import pandas as pd
 
-from backend.app.config import settings
-from backend.app.services.data_store import data_store
+from app.config import settings
+from app.services.data_store import data_store
 
 LONDON_TZ = ZoneInfo(settings.timezone)
 

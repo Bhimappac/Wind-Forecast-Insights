@@ -31,11 +31,15 @@ COPY --from=builder /root/.local /home/appuser/.local
 ENV PATH=/home/appuser/.local/bin:$PATH
 ENV PYTHONUNBUFFERED=1
 ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONPATH=/app
 
 # Copy backend application code and snapshots
 COPY --chown=appuser:appgroup app/ ./app/
 COPY --chown=appuser:appgroup data/ ./data/
 COPY --chown=appuser:appgroup pyproject.toml .
+
+# Create symlink so 'backend.app' works identically to 'app'
+RUN ln -s /app /app/backend
 
 # Switch to non-root user
 USER appuser

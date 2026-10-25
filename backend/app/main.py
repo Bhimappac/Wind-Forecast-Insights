@@ -4,9 +4,9 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from backend.app.api.routes import router as api_router
-from backend.app.config import settings
-from backend.app.services.data_store import data_store
+from app.config import settings
+from app.api.routes import router as api_router
+from app.services.data_store import data_store
 
 logging.basicConfig(
     level=logging.INFO,

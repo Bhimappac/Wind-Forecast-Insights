@@ -1,4 +1,4 @@
-from backend.app.services.forecast_service import ForecastService
+from app.services.forecast_service import ForecastService
 
 
 def test_default_decision_time_selection(mock_store):

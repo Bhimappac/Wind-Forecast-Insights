@@ -21,5 +21,6 @@ target-version = ['py311']
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+pythonpath = [".", "backend", ".."]
 python_files = ["test_*.py"]
 asyncio_mode = "auto"

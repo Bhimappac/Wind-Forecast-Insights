@@ -4,7 +4,7 @@ from zoneinfo import ZoneInfo
 import pandas as pd
 import pytest
 
-from backend.app.services.data_store import DataStore
+from app.services.data_store import DataStore
 
 LONDON_TZ = ZoneInfo("Europe/London")
 

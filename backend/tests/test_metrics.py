@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 
-from backend.app.services.metrics_service import MetricsService
+from app.services.metrics_service import MetricsService
 
 
 def test_metric_formulas():

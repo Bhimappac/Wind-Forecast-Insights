@@ -4,7 +4,7 @@ from zoneinfo import ZoneInfo
 
 import pandas as pd
 
-from backend.app.config import settings
+from app.config import settings
 
 logger = logging.getLogger(__name__)
 LONDON_TZ = ZoneInfo(settings.timezone)
