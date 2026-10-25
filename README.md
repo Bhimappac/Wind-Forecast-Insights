@@ -332,7 +332,3 @@ npm run build
   * **Backend API Docs:** `https://wind-forecast-insights-api.onrender.com/docs` *(Placeholder for deployment)*
 
 ---
-
-## 8. AI Assistance Declaration
-
-In accordance with transparent engineering disclosure requirements, **AI tools (Google Antigravity with Gemini 3.8)** were used to assist in the architectural design, prefetch scripting, frontend dashboard component authoring, and test generation for this project. All business logic, timezone calculations, and metric formulas were verified against official Elexon BMRS market data.
